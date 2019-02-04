@@ -54,7 +54,7 @@ public class recursion{
 
     public static int fibHelp(int n, int twoBehind, int oneBehind){
       //base case
-      if (n == 0 || n == 1) {return 1;}
+      if (n == 0 || n == 1) {return twoBehind;}
       else{
         return fibHelp(n -1, oneBehind, oneBehind + twoBehind);
       }
