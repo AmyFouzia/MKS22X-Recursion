@@ -66,8 +66,13 @@ public class recursion{
 
     //for testing purposes
     public static void main(String[] args){
-      sqrt(2.0, 0.001);
-      sqrt(9.0, 0.001);
+      System.out.println(sqrt(2.0, 0.001));
+      System.out.println(sqrt(9.0, 0.001));
+      System.out.println(fib(0));
+      System.out.println(fib(1));
+      System.out.println(fib(3));
+      System.out.println(fib(4));
+
     }
 
 }
