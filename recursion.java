@@ -11,7 +11,7 @@ public class recursion{
         if (n == 0) {return 0;}
         //requires helper to continue
         else{
-          return sqrtHelp(n, tolerance, n/2) //guess a number by n/2
+          return sqrtHelp(n, tolerance, n/2); //guess a number by n/2
         }
     }
 
