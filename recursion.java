@@ -94,8 +94,8 @@ public class recursion{
       System.out.println(fib(1));
       System.out.println(fib(3));
       System.out.println(fib(4));
-      System.out.println(3);
-      System.out.println(2);
+      System.out.println(makeAllSums(3));
+      System.out.println(makeAllSums(2));
     }
 
 }
