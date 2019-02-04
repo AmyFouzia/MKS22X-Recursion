@@ -65,18 +65,19 @@ public class recursion{
     //This helps you practice using recursion to test all of a set of possibilities and then backtrack and try others.
 
     public static ArrayList<Integer> makeAllSums(int n){
+      ArrayList<Integer> sums = new ArrayList<>();
         //base case
-        if(){
+        if(n == 0){
 
         }
         //requires helper to continue
         else{
-
+            makeAllSumsHelp(n, 0, sums);
         }
     }
 
     public static ArrayList<Integer> makeAllSumsHelp(int n, int partial, ArrayList<Interger> sums){
-        
+
     }
 
     //for testing purposes
