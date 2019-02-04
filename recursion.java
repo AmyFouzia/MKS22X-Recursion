@@ -24,7 +24,7 @@ public class recursion{
     //Write and TEST the method:
 
     public static double sqrtHelp(double n, double tolerance, double guess){
-        if((Math.pow(guess, 2) - n) / n > tolerance){ //checking percent error of guess squared
+        if(((Math.pow(guess, 2) - n) / n) * 100 > tolerance){ //checking percent error of guess squared
           return sqrtHelp(n, tolerance, (n / guess + guess) / 2); //using reccomended method of making a better guess
         }
         else{
@@ -54,13 +54,20 @@ public class recursion{
 
         }
         else{
-          
+
         }
     }
 
     //NUMBER THREE
 
     public static ArrayList<Integer> makeAllSums(){
+
+    }
+
+    //for testing purposes
+    public static void main(String[] args){
+      sqrt(2.0, 0.001);
+      sqrt(9.0, 0.001);
     }
 
 }
