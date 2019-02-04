@@ -59,9 +59,24 @@ public class recursion{
     }
 
     //NUMBER THREE
+    //Returns an array list of all subset totals of the numbers 1 to n inclusive.
+    //makeAllSums(3) returns an ArrayList [0, 3, 2, 5, 1, 4, 3, 6]
+      //(the order isn't important right now)
+    //This helps you practice using recursion to test all of a set of possibilities and then backtrack and try others.
 
-    public static ArrayList<Integer> makeAllSums(){
+    public static ArrayList<Integer> makeAllSums(int n){
+        //base case
+        if(){
 
+        }
+        //requires helper to continue
+        else{
+
+        }
+    }
+
+    public static ArrayList<Integer> makeAllSumsHelp(int n, int partial, ArrayList<Interger> sums){
+        
     }
 
     //for testing purposes
