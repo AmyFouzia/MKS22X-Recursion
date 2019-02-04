@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class recursion{
 
     //NUMBER ONE
@@ -71,7 +73,7 @@ public class recursion{
           return sums;
     }
 
-    public static ArrayList<Integer> makeAllSumsHelp(int n, int partial, ArrayList<Interger> sums){
+    public static void makeAllSumsHelp(int n, int partial, ArrayList<Integer> sums){
       //base case
       if(n == 0){
         sums.add(partial);
