@@ -77,7 +77,10 @@ public class recursion{
         sums.add(partial);
       }
       else{
-
+          //add to partial
+          makeAllSumsHelp(n-1, n + partial, sums);
+          //just partial
+          makeAllSumsHelp(n-1, partial, sums);
       }
     }
 
@@ -89,7 +92,8 @@ public class recursion{
       System.out.println(fib(1));
       System.out.println(fib(3));
       System.out.println(fib(4));
-
+      System.out.println(3);
+      System.out.println(2);
     }
 
 }
