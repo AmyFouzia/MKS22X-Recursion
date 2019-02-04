@@ -26,7 +26,7 @@ public class recursion{
     //Write and TEST the method:
 
     public static double sqrtHelp(double n, double tolerance, double guess){
-        if(((Math.pow(guess, 2) - n) / n) * 100 > tolerance){ //checking percent error of guess squared
+        if (Math.abs(Math.pow(guess, 2) - n) / n > tolerance) { //checking percent error of guess squared
           return sqrtHelp(n, tolerance, (n / guess + guess) / 2); //using reccomended method of making a better guess
         }
         else{
