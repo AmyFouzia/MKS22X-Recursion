@@ -43,21 +43,21 @@ public class recursion{
     */
 
     public static int fib(int n){
-        //base case
-        if (n == 0 || n == 1) {return 1;}
         //helper required to continue
-        else{
           return fibHelp(n, 0, 1);
           //twhBehind becomes oneBehind
           //oneBehind becomes the sum of last two nums in fib sequence
-        }
     }
 
     //the series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
     //The next number is found by adding up the two numbers before it.
 
     public static int fibHelp(int n, int twoBehind, int oneBehind){
-      return fibHelp(n -1, oneBehind, oneBehind + twoBehind);
+      //base case
+      if (n == 0 || n == 1) {return 1;}
+      else{
+        return fibHelp(n -1, oneBehind, oneBehind + twoBehind);
+      }
     }
 
     //NUMBER THREE
