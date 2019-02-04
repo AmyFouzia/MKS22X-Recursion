@@ -66,18 +66,19 @@ public class recursion{
 
     public static ArrayList<Integer> makeAllSums(int n){
       ArrayList<Integer> sums = new ArrayList<>();
-        //base case
-        if(n == 0){
-
-        }
         //requires helper to continue
-        else{
-            makeAllSumsHelp(n, 0, sums);
-        }
+          makeAllSumsHelp(n, 0, sums);
+          return sums;
     }
 
     public static ArrayList<Integer> makeAllSumsHelp(int n, int partial, ArrayList<Interger> sums){
+      //base case
+      if(n == 0){
+        sums.add(partial);
+      }
+      else{
 
+      }
     }
 
     //for testing purposes
